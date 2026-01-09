@@ -1,0 +1,48 @@
+.chart-card {
+  background: rgba(139, 92, 246, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.chart-header {
+  margin-bottom: 24px;
+}
+
+.chart-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.chart-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.chart-wrapper {
+  height: 320px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .chart-card {
+    padding: 24px;
+  }
+  
+  .chart-title {
+    font-size: 18px;
+  }
+  
+  .chart-wrapper {
+    height: 280px;
+  }
+}
