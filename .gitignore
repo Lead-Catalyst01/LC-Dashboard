@@ -22,3 +22,8 @@ pnpm-debug.log*
 # caches
 .cache/
 node_modules/.cache/
+
+# local backups
+*.bak
+*.backup
+.DS_Store

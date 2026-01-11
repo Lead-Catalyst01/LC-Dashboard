@@ -1,0 +1,107 @@
+:root{
+  --bg0: #06060b;
+  --bg1: #090916;
+
+  --glassA: rgba(255,255,255,0.07);
+  --glassB: rgba(255,255,255,0.10);
+  --stroke: rgba(255,255,255,0.14);
+
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.62);
+
+  --shadow1: 0 14px 40px rgba(0,0,0,0.55);
+  --shadow2: 0 26px 80px rgba(0,0,0,0.62);
+
+  --accent1: rgba(168,85,247,0.95); /* purple */
+  --accent2: rgba(34,211,238,0.9);  /* cyan */
+}
+
+/* Dark premium background with subtle aurora */
+html, body{
+  height: 100%;
+  background:
+    radial-gradient(900px 560px at 18% 18%, rgba(168,85,247,0.30), transparent 65%),
+    radial-gradient(900px 560px at 78% 20%, rgba(34,211,238,0.22), transparent 60%),
+    radial-gradient(900px 560px at 55% 88%, rgba(168,85,247,0.18), transparent 62%),
+    linear-gradient(180deg, var(--bg0), var(--bg1));
+  color: var(--text);
+}
+
+/* Core glass surface */
+.glass-card{
+  position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+  border: 1px solid var(--stroke);
+  border-radius: 22px;
+  box-shadow: var(--shadow1);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+/* glossy highlight layer */
+.glass-card::before{
+  content:"";
+  position:absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 260px at 18% 12%, rgba(255,255,255,0.18), transparent 45%),
+    radial-gradient(800px 240px at 82% 18%, rgba(255,255,255,0.08), transparent 55%);
+  pointer-events:none;
+}
+
+/* depth + 3D hover */
+.glass-card{
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+.glass-card:hover{
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: var(--shadow2);
+  border-color: rgba(255,255,255,0.22);
+}
+
+/* padding helper */
+.glass-card--pad{ padding: 22px; }
+
+/* ========= PREMIUM GLASS MICRO-INTERACTIONS ========= */
+
+/* Hover sheen layer (subtle, premium) */
+.glass-card::after{
+  content:"";
+  position:absolute;
+  inset:-40%;
+  background: linear-gradient(120deg, transparent 35%, rgba(255,255,255,0.10), transparent 65%);
+  transform: translateX(-35%) rotate(12deg);
+  opacity: 0;
+  transition: opacity 220ms ease;
+  pointer-events:none;
+}
+
+.glass-card:hover::after{
+  opacity: 0.9;
+  animation: sheenMove 900ms ease forwards;
+}
+
+@keyframes sheenMove{
+  from { transform: translateX(-35%) rotate(12deg); }
+  to   { transform: translateX(35%) rotate(12deg); }
+}
+
+
+/* =========================
+   WOW: PARALLAX TILT HOVER
+   ========================= */
+.glass-card{
+  transform-style: preserve-3d;
+}
+
+.glass-card:hover{
+  transform: translateY(-7px) scale(1.01) rotateX(2.4deg) rotateY(-2.4deg);
+}
+
+/* Make inner content feel lifted */
+.glass-card > *{
+  transform: translateZ(20px);
+}
+
