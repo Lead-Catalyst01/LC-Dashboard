@@ -5,13 +5,15 @@
   "homepage": "https://lead-catalyst01.github.io/LC-Dashboard",
   "dependencies": {
     "chart.js": "^4.4.1",
+    "file-saver": "^2.0.5",
     "framer-motion": "^10.18.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "recharts": "^3.6.0"
+    "recharts": "^3.6.0",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
