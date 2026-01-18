@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/LC-Dashboard/static/css/main.7fa76ad4.css",
-    "main.js": "/LC-Dashboard/static/js/main.b4b621d9.js",
+    "main.css": "/LC-Dashboard/static/css/main.521e5014.css",
+    "main.js": "/LC-Dashboard/static/js/main.4b0ca2ac.js",
     "static/media/lead-catalyst-full.png": "/LC-Dashboard/static/media/lead-catalyst-full.0abafaca367281dc543b.png",
     "index.html": "/LC-Dashboard/index.html",
-    "main.7fa76ad4.css.map": "/LC-Dashboard/static/css/main.7fa76ad4.css.map",
-    "main.b4b621d9.js.map": "/LC-Dashboard/static/js/main.b4b621d9.js.map"
+    "main.521e5014.css.map": "/LC-Dashboard/static/css/main.521e5014.css.map",
+    "main.4b0ca2ac.js.map": "/LC-Dashboard/static/js/main.4b0ca2ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fa76ad4.css",
-    "static/js/main.b4b621d9.js"
+    "static/css/main.521e5014.css",
+    "static/js/main.4b0ca2ac.js"
   ]
 }
