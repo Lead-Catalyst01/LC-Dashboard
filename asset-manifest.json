@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/LC-Dashboard/static/css/main.7fa76ad4.css",
+    "main.js": "/LC-Dashboard/static/js/main.b4b621d9.js",
+    "static/media/lead-catalyst-full.png": "/LC-Dashboard/static/media/lead-catalyst-full.0abafaca367281dc543b.png",
+    "index.html": "/LC-Dashboard/index.html",
+    "main.7fa76ad4.css.map": "/LC-Dashboard/static/css/main.7fa76ad4.css.map",
+    "main.b4b621d9.js.map": "/LC-Dashboard/static/js/main.b4b621d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fa76ad4.css",
+    "static/js/main.b4b621d9.js"
+  ]
+}
