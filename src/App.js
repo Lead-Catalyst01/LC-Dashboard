@@ -12,11 +12,21 @@ import DonutChart from './components/DonutChart';
 import CampaignTable from './components/CampaignTable';
 
 import logo from './assets/lead-catalyst-full.png';
+import { exportDashboardExcel } from './utils/exportExcel';
 
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const handleExport = () => {
+  try {
+    exportDashboardExcel({ data });
+  } catch (e) {
+    console.error("Export failed", e);
+    alert("Export failed. Check console.");
+  }
+};
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -128,7 +138,10 @@ function App() {
             </motion.div>
           </div>
 
+          <div className="title-row">
           <motion.h1 className="title" variants={itemLeft}>{(brand_name || "Client")} Campaign Analytics</motion.h1>
+          <button type="button" className="btn-export" onClick={handleExport}>Export XLSX</button>
+        </div>
           <motion.p className="subtitle" variants={itemLeft}>{subtitle}</motion.p>
         </motion.div>
 

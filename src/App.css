@@ -394,3 +394,15 @@
 .btn-export:hover{
   opacity: 0.92;
 }
+
+.title-row{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.title-row .btn-export{
+  margin-bottom: 8px;
+}
