@@ -1,0 +1,190 @@
+.table-section{
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.table-header{
+  margin-bottom: 10px;
+}
+
+.table-title{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.92);
+}
+
+.table-description{
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+}
+
+.table-wrapper{
+  margin-top: 12px;
+  overflow-x: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.12);
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+thead th{
+  text-align: left;
+  font-size: 11px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  padding: 14px 14px;
+  color: rgba(255,255,255,0.65);
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+tbody td{
+  padding: 14px 14px;
+  color: rgba(255,255,255,0.82);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 13px;
+}
+
+tbody tr:hover{
+  background: rgba(255,255,255,0.04);
+}
+
+.campaign-name{
+  font-weight: 600;
+  color: rgba(255,255,255,0.90);
+}
+
+.badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.16);
+}
+
+.badge-excellent{
+  background: rgba(34, 211, 238, 0.16);
+  color: rgba(34, 211, 238, 0.95);
+}
+
+.badge-good{
+  background: rgba(168, 85, 247, 0.16);
+  color: rgba(168, 85, 247, 0.95);
+}
+
+.badge-average{
+  background: rgba(236, 72, 153, 0.14);
+  color: rgba(236, 72, 153, 0.92);
+}
+
+.status-pill{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.88);
+}
+
+.status-active{
+  border-color: rgba(34,197,94,0.35);
+  background: rgba(34,197,94,0.12);
+}
+
+.status-completed{
+  border-color: rgba(59,130,246,0.35);
+  background: rgba(59,130,246,0.12);
+}
+
+.status-paused{
+  border-color: rgba(245,158,11,0.35);
+  background: rgba(245,158,11,0.12);
+}
+
+.status-unknown{
+  border-color: rgba(148,163,184,0.35);
+  background: rgba(148,163,184,0.12);
+}
+
+/* Header layout upgrades */
+.table-header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.table-summary{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content:flex-end;
+}
+
+/* Pills */
+.pill{
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.86);
+  letter-spacing: .02em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.pill-active{
+  border-color: rgba(34,211,238,0.35);
+}
+
+.pill-completed{
+  border-color: rgba(168,85,247,0.35);
+}
+
+.pill-paused{
+  border-color: rgba(255,255,255,0.18);
+  opacity: 0.9;
+}
+
+/* Status badge */
+.status-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.86);
+  letter-spacing: .02em;
+}
+
+.status-active{
+  border-color: rgba(34,211,238,0.35);
+}
+
+.status-completed{
+  border-color: rgba(168,85,247,0.35);
+}
+
+.status-paused{
+  border-color: rgba(255,255,255,0.18);
+  opacity: 0.9;
+}
+
